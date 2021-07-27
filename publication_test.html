@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ijapy</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style_test.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbars">
+    <a class="navbar-brand logo-content" href="index_test.html">
+        <img src="image/logo.png" alt="logo" class="logo">
+    </a>
+    
+      <ul class="navbar-nav navbar-right nav-items">
+        <li class="nav-item">
+            <a class="menu-link" href="index_test.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu-link" href="trajet_test.html">Trajets</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu-link active" href="publication_test.html">Publier votre annonce</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu-link" href="messagerie_test.html">Messagerie<span class="badge badge-warning pull-right"> 2</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="menu-link" href="notification_test.html">Notification<span class="badge badge-warning pull-right"> 9</span></a>
+        </li>
+        <div class="auth-header-content">
+          <div class="avatar-content">
+            <img src="" class="avatar-header">
+            <span class="initial-name">Z</span>
+          </div>
+          <span class="auth-name"> Zinho</span>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+      <div class="row publication-content">
+        <form method="" action="" id="form_publication">
+          <div class="col-md-8">
+            <h1 class="publication-title">MES TRAJETS</h1>
+            <p class="intro intro-itineraire">Veuillez entrer votre itineraire</p>
+            <div class="field-content">
+              <div class="form-group">
+                <label class="label-pub">Itinéraire</label>
+                <input class="input-publication i-depart" placeholder="Antananarivo"></input>
+                <input class="input-publication i-arriver" placeholder="Antsirabe"></input>
+              </div>
+              <div class="form-group">
+                <label class="label-pub">Date et heure</label>
+                <input class="input-publication date" placeholder="13/06/2021"></input>
+                <input class="input-publication heure" placeholder="09 : 30"></input>
+              </div>
+              <p class="intro intro-vehicule">Séléctionner un véhicule</p>
+              <div class="vehicule-field">
+                <div class="form-group div-vehicule">
+                  <label class="label-pub">Véhicule</label>
+                  <input class="input-publication vehicule"></input>
+                </div>
+                <div class="form-group div-place">
+                  <label class="label-pub">Place libre</label>
+                  <input class="input-publication place"></input>
+                </div>
+              </div>
+              <div class="description-price">
+                <p class="text-price">Prix du trajet pour le passager : </p>
+                <span class="price">50 000 <span class="unit">Ariary</span></span>
+                <p class="text-explain">Le payement s'effectuera sur place avec
+                le covoitureur, il ne s'effectue pas en ligne</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 bloc-right">
+            <div class="img-content"></div>
+            <div class="btn-pub-content">
+              <button type="submit" class="btn btn-pub btn-publier">Publier</button>
+              <button type="submit" class="btn btn-pub btn-creer">CREER</button>
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+  <script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.js"></script>
+</body>
+</html> 

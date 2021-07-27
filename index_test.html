@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ijapy</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style_test.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm navbars">
+		<a class="navbar-brand logo-content" href="index_test.html">
+		  	<img src="image/logo.png" alt="logo" class="logo">
+		</a>
+	  
+	  	<ul class="navbar-nav navbar-right nav-items">
+	    	<li class="nav-item">
+	      		<a class="menu-link active" href="index_test.html">Accueil</a>
+	    	</li>
+	    	<li class="nav-item">
+	            <a class="menu-link" href="trajet_test.html">Trajets</a>
+	        </li>
+	    	<li class="nav-item">
+	      		<a class="menu-link" href="publication_test.html">Publier votre annonce</a>
+	    	</li>
+    		<li class="nav-item">
+	      		<a class="menu-link" href="contact_test.html">Contact</a>
+	    	</li>
+	    	<li>
+            	<div class="log-menu">
+               		<a class="menu-link" data-toggle="modal" data-target="#modal_inscription">Inscription</a> |
+               		<a class="menu-link" data-toggle="modal" data-target="#modal_connexion">Connexion</a>
+            	</div>
+         	</li>
+	  </ul>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row section-1">
+			<div class="col-md-12 bloc-1">
+				<div class="col-md-6 img-car-content">
+					<img class="img-car" src="image/1.png">
+				</div>
+				<div class="col-md-6 text-content">
+					<h1><b>TROUVEZ <br> UN COVOITURAGE</b></h1><br>
+					<p class="description-1">Covoiturez sur tous vos types de trajets sans aucune commission</p>
+					<br>
+					<button class="btn btn-commencer">Commencer</button>
+				</div>
+			</div>
+
+			<div class="col-md-12 bloc-2">
+				<div class="col-md-4 item-bloc-2">
+				    <img class="img-bloc-2" src="image/2.png">
+				    <a href="#">
+		               <h2 class="title-bloc title-bloc-2">Trouvez</h2>
+		            </a>
+				    <p class="description-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="col-md-4 item-bloc-2">
+				    <img class="img-bloc-2" src="image/3.png">
+				    <a href="#">
+		               <h2 class="title-bloc title-bloc-2">Covoitez</h2>
+		            </a>
+				    <p class="description-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+				</div>
+				<div class="col-md-4 item-bloc-2">
+				    <img class="img-bloc-2" src="image/4.png">
+				    <a href="#">
+                		<h2 class="title-bloc title-bloc-2">Partage</h2>
+              		</a>
+				    <p class="description-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+
+			<!-- Modal connexion -->
+			<div class="modal fade" id="modal_connexion">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<p class="modal-connexion-title">Identifiez vous</p>
+
+							<div class="form-content">
+								<form id="form_connexion" action="" method="">
+									<div class="form-group">
+					                  	<label for="pseudo" class="label-connexion">Pseudo </label>
+					                  	<input type="text" class="input-connexion" placeholder=" pseudo" id="pseudo">
+					               	</div>
+
+					               	<div class="form-group">
+					                  	<label for="email" class="label-connexion">E-mail </label>
+					                  	<input type="email" class="input-connexion" placeholder=" @example.com" id="email">
+					               	</div>
+
+					               	<div class="form-group">
+					                  	<label for="pwd" class="label-connexion">Mot de passe </label>
+					                  	<input type="password" class="input-connexion" placeholder=" ******" id="pwd">
+					               	</div>
+
+					               	<div class="checkbox-content">
+					                  	<label><input type="checkbox"> Souvenez moi</label>
+					               	</div>
+					               	<button type="submit" class="btn btn-mod-conn">Se Connecter</button>
+					               	<a type="button" class="btn btn-warning btn-mod-insc">S'inscrire</a>
+								</form>
+							</div>
+               				<!-- <a type="submit" class="btn btn-warning btn-mod-insc">S'inscrire</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal inscription -->
+			<div class="modal fade" id="modal_inscription">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content modal-content-inscription">
+						<div class="row modal-body body-mod-insc">
+							<button type="button" class="close close-mod-insc" data-dismiss="modal">&times;</button>
+							<p class="modal-inscription-title">Inscription</p>
+							<form id="form_inscription" action="" method="">
+								<div class="col-md-4 flex-column left-content">
+									<div class="add-avatar-content">
+										<input type="file" name="input-avatar" class="hide">
+										<img src="image/avatar.png" class="avatar">
+									</div>
+									<div class="img-dec-content">
+										<img class="img-dec-insc" src="image/5.png">
+									</div>
+								</div>
+								<div class="col-md-8 fields-content">
+									<div class="col-md-6 p-2">
+										<div class="form-group">
+											<label class="label-inscription" for="nom">Pseudo</label>
+											<input type="text" name="nom" id="nom" class="input-inscription" placeholder=" Votre nom ou pseudo">
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="prenom">Prénom</label>
+											<input type="text" name="prenom" id="prenom" class="input-inscription" placeholder=" prénom">
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="adresse">Adresse</label>
+											<input type="text" name="adresse" id="adresse" class="input-inscription" placeholder=" Lot II M 8 ter">
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="phone">Téléphone</label>
+											<input type="text" name="telephone" id="phone" class="input-inscription" placeholder=" 034xxxxxxx">
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="email">E-mail</label>
+											<input type="email" name="email" id="email" class="input-inscription" placeholder=" @example.com">
+										</div>
+									</div>
+									<div class="col-md-6 p-2">
+										<div class="form-group">
+											<label class="label-inscription" for="sexe">Sexe</label>
+											<select name="sexe" id="sexe" class="input-inscription">
+												<option value="homme">Homme</option>
+												<option value="femme">Femme</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="age">Age</label>
+											<input type="text" name="age" id="age" class="input-inscription">
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="permis">Permis</label>
+											<select name="permis" id="permis" class="input-inscription">
+												<option value=""></option>
+												<option value="A">A</option>
+												<option value="B">B</option>
+												<option value="C">C</option>
+												<option value="D">D</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="pwd">Password</label>
+											<input type="password" name="password" id="pwd" class="input-inscription" placeholder=" ******">
+										</div>
+										<div class="form-group">
+											<label class="label-inscription" for="cpwd">Confirm</label>
+											<input type="password" name="cpassword" id="cpwd" class="input-inscription" placeholder=" ******">
+										</div>
+									</div>
+									<div class="col-md-12 p-2 d-flex justify-content-around btn-insc-content">
+										<button class="btn btn-insc btn-annuler">Annuler</button>
+										<button type="submit" class="btn btn-insc btn-save">Enregistrer</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+</body>
+</html> 
